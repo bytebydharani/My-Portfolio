@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dharani Portfolio</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      title="timeline-styles"
+      rel="stylesheet"
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">DHARANI</div>
+      <button class="contact-btn">Contact</button>
+    </header>
+
+    <main>
+      <div class="title-section">
+        <h1>JAVA DEVELOPER</h1>
+        <h2>WEB DEV</h2>
+        <div class="location">
+          <p>BASED<br />In<br />INDIA</p>
+        </div>
+      </div>
+
+      <div class="bio-section">
+        <p class="bio">
+          WITH <span style="color: #76b0ab"> OVER FOUR YEARS </span> OF REFINED
+          EXPERTISE THIS DESIGNER HAS METICULOUSLY CRAFTED SEAMLESS AND
+          INTUITIVE <span style="color: #842626"> USER EXPERIENCES.</span>
+        </p>
+      </div>
+
+      <div class="scroll-down"></div>
+
+      <spline-viewer
+        class="planet-3D"
+        url="https://prod.spline.design/uPYRLWG0cOqfBaAW/scene.splinecode"
+      ></spline-viewer>
+    </main>
+
+    <section class="about-section">
+      <h1 class="about-title">About Me</h1>
+      <div class="bento-grid">
+        <div class="card intro">
+          <h2 class="card-title">HI THERE, I'M DHARANI</h2>
+          <p class="card-text">
+            I specialize in
+            <span style="color: #ffc4c4">Backend Development</span>, focusing on
+            building robust, scalable, and high-performance applications. With a
+            strong foundation in <span style="color: #76b0ab">JAVA</span> and
+            <span style="color: #76b0ab">SPRING BOOT</span>, I enjoy crafting
+            efficient server-side logic and collaborating with frontend teams to
+            deliver seamless, user-centric solutions.
+          </p>
+
+          <img src="images/gradient.png" alt="" class="background-img" />
+          <div class="model-box"></div>
+        </div>
+        <div class="card tech">
+          <h2 class="card-title">TECH STACK</h2>
+          <p class="card-text">
+            My tech stack includes <span style="color: #76b0ab">Java</span>,
+            <span style="color: #76b0ab">Spring Boot</span>, and
+            <span style="color: #76b0ab">SQL</span> for building secure and
+            scalable backend systems. On the frontend, I work with
+            <span style="color: #f22525">HTML</span>,
+            <span style="color: #f22525">CSS</span>,
+            <span style="color: #f22525">JavaScript</span>, and
+            <span style="color: #f22525">React</span> to create responsive and
+            dynamic user interfaces. This full-stack proficiency enables me to
+            build efficient, maintainable, and production-ready web
+            applications.
+          </p>
+          <img src="images/gradient 2.png" alt="" class="background-img" />
+          <img
+            src="images/skills_group-removebg-preview.png"
+            alt=""
+            class="skills-group"
+          />
+        </div>
+        <div class="card time">
+          <h2 class="card-title">
+            VERY FLEXIBLE WITH COMMUNICATIONS & LOCATIONS
+          </h2>
+          <p class="card-text">
+            Ready to join immediately with full relocation flexibility across Tamil Nadu and Bangalore.
+          </p>
+          <img src="images/gradient3&4.png" alt="" class="background-img" />
+          <button class="btn contact-me">
+            <i class="bx bx-send"></i>
+            <a href="mailto:dharanitechcse@gmail.com" class="contact-link">Contact ME</a>
+          </button>
+        </div>
+        <div class="card passion">
+          <h2 class="card-title">PASSION FOR CODING</h2>
+          <p class="card-text">
+            Solving problems and building solutions through code. Programming is
+            my profession—it's my passion. I enjoy exploring new technologies
+            and enhancing my skills.
+          </p>
+          <img src="images/gradient3&4.png" alt="" class="background-img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <h1 class="timeline-title">My Timeline</h1>
+      <div id="my_tl"></div>
+    </section>
+
+    <section class="contact-section">
+      <div class="section-header">
+        <h3>Get In Touch</h3>
+        <p>
+          Have a project in mind or just want to say hello? Drop me a message
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="info-card">
+          <h3>Contact info</h3>
+
+          <div class="contact-item">
+            <p>Email</p>
+            <a href="mailto:dharanitechcse@gmail.com"
+              >dharanitechcse@gmail.com</a
+            >
+          </div>
+
+          <div class="contact-item">
+            <p>Phone</p>
+            <a href="tel:+919443386176">94433-86176</a>
+          </div>
+
+          <div class="contact-item">
+            <p>Location</p>
+            <a
+              href="https://www.google.com/maps/place/Tamil+Nadu,+India"
+              target="_blank"
+              rel="noopener"
+              >Tamil Nadu, India</a
+            >
+          </div>
+          <div class="social-link">
+            <p>Contact with me</p>
+            <a
+              href="https://github.com/bytebydharani?tab=repositories"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a href="https://www.linkedin.com/in/dharani-java-dev">Linkedin</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-content">
+            <h3 id="send-message">Send Message</h3>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="subject"
+                  required
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                  required
+                  class="form-control"
+                ></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="message-btn">
+                Send Message
+              </button>
+
+              <div class="success-message" id="successMessage">
+                Message sent successfully! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h3>©️2025, Made with ❤️ by Dharani</h3>
+      <div class="box-icons">
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/dharani-java-dev"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"
+    ></script>
+
+    <script src="app.js" defer></script>
+    <script src="main.js" defer></script>
+
+    <script defer>
+      // Lazy load Timeline and second Spline model
+      document.addEventListener("DOMContentLoaded", () => {
+        // Timeline
+        const timelineObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const script = document.createElement("script");
+                script.src =
+                  "https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js";
+                script.onload = () => {
+                  const dataScript = document.createElement("script");
+                  dataScript.src = "timeline-data.js";
+                  dataScript.onload = () => {
+                    new TL.Timeline("my_tl", timelineData);
+                  };
+                  document.body.appendChild(dataScript);
+                };
+                document.body.appendChild(script);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        const timelineSection = document.querySelector(".timeline");
+        if (timelineSection) timelineObserver.observe(timelineSection);
+
+        // Lazy-load 2nd spline model
+        const splineObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const viewer = document.createElement("spline-viewer");
+                viewer.setAttribute(
+                  "url",
+                  "https://prod.spline.design/ASpZLRcb1AD9pxmi/scene.splinecode"
+                );
+                viewer.classList.add("info-3D");
+                entry.target.appendChild(viewer);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        const modelBox = document.querySelector(".model-box");
+        if (modelBox) splineObserver.observe(modelBox);
+      });
+    </script>
+  </body>
+</html>
